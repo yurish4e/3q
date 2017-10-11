@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/animate.min.css">
+	<title>Rollover</title>
+	<style type="text/css" media="screen">
+        #second {
+            display: none;
+        }
+        section {
+            transition: all 1s linear;
+        }
+	</style>
+</head>
+<body>
+
+<article>
+    <section id="first" class="wow">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, ea voluptates cupiditate voluptatum? Explicabo repudiandae modi quo, sequi quibusdam, nesciunt itaque culpa, nihil eligendi et temporibus odio, laudantium hic accusamus.</p>
+        <button id="show">show</button>
+    </section>
+    <section id="second">
+        <p>1122Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, ea voluptates cupiditate voluptatum? Explicabo repudiandae modi quo, sequi quibusdam, nesciunt itaque culpa, nihil eligendi et temporibus odio, laudantium hic accusamus.</p>
+        <button id="back">Back</button>
+    </section>
+</article>
+
+</body>
+<script src="scripts/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+<script type="text/javascript">
+        $(document).ready(function(){
+          $("#show").click(function() {
+              $("#first").toggle();
+              
+              $("#second").toggle( );
+          });
+            
+            $("#back").click(function() {
+              $("#first").toggle( );
+              $("#second").toggle( );
+          });
+         });/*end  ready*/
+     </script>
+</html>
